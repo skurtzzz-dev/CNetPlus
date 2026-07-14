@@ -1,0 +1,210 @@
+Good morning everyone! :)
+
+Kindly create a Github Account
+https://github.com/
+Fork this repository: 
+https://github.com/rivancorp/CNetPlus
+
+WI-Fi and PC Pass: C1sc0123
+
+task1: 
+name, network skillset:
+10: magling, send here: dns
+network,vpn,proxy,share,IPv4/ipv6
+vmware Server.
+6/7: ipv4,linux,shareint.
+
+3: crimp 45,sort
+0: simple person.
+
+
+********
+1. Server
+2. Hypervisor (T1 - VSPHERE / T2 - VMWARE WORKSTATION)
+
+
+
+******
+TASK 2 WHAT IS A NETWORK?
+A Network is a collection of connected devices that act as one.
+
+
+PHYSICAL LAYER
+- WIRED
+- WIRELESS
+- FOC (FIBER OPTIC)
+
+
+Android only
+- Wifi Analyzer by Olgor
+
+ALL OS
+- FING
+
+
+
+Delete the ff on Virtual Machines:
+- UTM 
+- CSR
+- BLDG
+- FIREWALL
+- EVENG
+- DEVOPS
+
+********
+VMWARE
+- OPEN CSR1000V(VOIP FEATURES)
+  Name:           CISCO-FW-VM
+  Deploy:         Small
+  Router Name:    CISCO-FW-VM
+  Username:       admin
+  Password:       pass
+  Confirm Pass:   pass
+
+- Network Adapters:
+  Adapter 1: NAT
+  Adapter 2: VMNet2
+  Adapter 3: VMNet3
+
+~~~ Commands
+CNETPLUS REPO > Day4f-Dec12cyBerSEC.txt
+  LINE 52 - 72
+
+
+*****
+L3 & L4
+
+!@cmd
+ping 192.168.102.11            L3 TEST
+nmap -v 192.168.102.11         L4 TEST
+----------
+PORT    STATE SERVICE
+22/tcp  open  ssh
+23/tcp  open  telnet
+80/tcp  open  http
+443/tcp open  https
+MAC Address: 00:0C:29:B3:85:37 (VMware)
+
+
+Login via web:
+- https://192.168.102.11
+user: admin
+pass:  pass
+
+
+!@cmd
+cd desktop
+mkdir  _YourName
+cd _YourName
+git clone https://github.com/rivancorp/cnetplus
+
+
+***********
+DAY 1 NETWORK PLUS
+From CNETPLUS > Day1-May5-SirRob
+
+Access Cisco Devices:
+Would you like to enter the initial configuration dialog? [yes/no]: 
+- CTRL + C
+- enable
+
+Verify Connection:
+ping    10.m.1.10   !Yourself
+ping    10.m.1.2    !L3
+nmap -v 10.m.1.2    !L4
+
+Cisco Show Commands:
+SIIB - Show ip int brief
+
+Day1 Commands
+Line 3-33: Basic IP & SVI
+Line 37-71: Core BABA
+Line 100-126: DHCP
+3 Way Handshake
+CLIENT              SERVER
+         -- SYN -->
+        <-- ACK -- 
+       -- SYN ACK -->
+  =====ESTABLISHED CONNECTION=====
+
+
+Switch:
+1. PoE (803.3af, 802.3at, 802.3bt)
+2. Switch Virtual Interface
+3. DHCP
+4. Gawa VLAN Lipat VLAN
+5. MAC LEARN/MAC RESERVATION
+
+
+CUCM
+1. ANALOG PHONES
+2. EPHONES
+3. VIDEO
+4. INCOMING & OUTGOING CALLS
+
+EDGE
+1. STATIC Routing
+2. OSPF Routing
+3. EIGRP Routing
+4. BGP Routing
+5. VPN
+
+SPAN
+!@baba
+conf t
+ monitor session 1 source int fa0/3,fa0/5,fa0/7
+ monitor session 1 dest int fa0/1,fa0/9
+ end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Ephones
+1. Poe
+2. MAC Address  [xml]
+3. IP ADDRESS
+4. TFTP (UDP 69), SCCP (2000), SIP (5060)
+5. RTP
+6. G711, G729, H323
+7. CUCM
+
+
+
+
+
+fa0/8 001a.0704.7f5b
+fa0/6 001a.0709.c258
+fa0/5 203a.0782.c0b5
+fa0/7 ccd8.c1fb.161b
+
+
+C1sc0123
+net12.com
+netm.com
+
+******
+DNS
+
+netm.com
+- ct  : 10.m.1.2
+- cb  : 10.m.1.4
+- cm  : 10.m.100.8
+- ed  : 10.m.m.1
+- c6  : 10.m.50.6
+- c8  : 10.m.50.8
+
+
+
+
+
+
