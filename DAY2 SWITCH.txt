@@ -1,0 +1,16 @@
+!@TAAS
+
+conf t
+int fa0/9
+no sw
+ip add 10.200.20.30 255.255.255.224
+end
+
+!@BABA
+
+conf t
+int fa0/9
+no sw
+ip add 10.200.20.35 255.255.255.224
+end
+
