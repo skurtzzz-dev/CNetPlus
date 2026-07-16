@@ -1,0 +1,30 @@
+10.m.m.1/24 = 10.m.m.0  /24 (3rd, 1i)
+200.0.0.12 = 200.0.0.0
+m.0.0.1 = m.0.0.1
+
+!@EDGE
+conf t
+ no router ospf 1
+ router ospf 1
+ network 31.0.0.1  0.0.0.0 area 0
+ network 200.0.0.0  0.0.0.255 area 0
+ network 10.31.31.0   0.0.0.255 area 0 
+ end
+show ip route ospf 
+
+
+!@CoreBABA
+conf t
+ ip routing
+ router ospf 1
+ network 10.31.0.0  0.0.255.255 area 0
+ end
+show ip ospf neigh
+show ip route ospf
+
+
+
+@! STATIC ROUTE CMD
+ route add 10.0.0.0 mask 255.0.0.0 10.31.1.4
+ route add 200.0.0.0 mask 255.255.255.0 10.31.1.4
+ ping 10.21.1.8
